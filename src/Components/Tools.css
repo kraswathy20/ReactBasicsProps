@@ -1,0 +1,17 @@
+.tools{
+    background-color: bisque;
+    border: 1px solid grey;
+}
+
+.tools-header{
+    margin-top: 10px;
+    margin-left: 10px;
+    border-color: lightblue;
+    color: dimgray;
+}
+
+.tools-footer{
+    color: dimgrey;
+    margin-left: 10px;
+    font-size: large;
+}
