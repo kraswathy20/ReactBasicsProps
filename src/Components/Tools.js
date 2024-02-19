@@ -1,10 +1,12 @@
 import React from "react";
 import './Tools.css'
+import Addnew from "../list/Addnew";
 
 class Tools extends React.Component{
     render(){
      const {
-        children
+        children,
+        onAction
      } =this.props
 
     const onlychild = React.Children.only(children)
@@ -12,12 +14,13 @@ class Tools extends React.Component{
         return(
            <div className="tools">
                 <div className="tools-header">
-                    <select className="status">
+                    <select onChange={onAction} className="status">
                         <option name='all' value='all'>All</option>
                         <option name='Active' value='active'>Active</option>
                         <option name='Inactive' value='inactive'>Inactive</option>
                     </select>
                 </div>
+                <Addnew/>
                 {children}
                 <div className="tools-footer">
                 

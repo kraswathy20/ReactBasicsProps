@@ -19,3 +19,13 @@
     background:beige;
     padding: 20px;
 }
+
+.list-title{
+    display:  flex;
+    justify-content: space-between;
+}
+
+.list-title label{
+    color: blue;
+    cursor: pointer
+}
